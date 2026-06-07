@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- FIX 1: intial-width=device-width-1.0 → initial-scale=1.0 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio Webpage</title>
   <link rel="stylesheet" href="style.css">
@@ -16,19 +15,15 @@
       <li><a class="nav-link" href="#Contact">Contact</a></li>
     </ul>
   </nav>
- 
   <main id="main-doc">
- 
-    <section class="main-section" id="About">
+     <section class="main-section" id="About">
       <header id="welcome-section">
         <h1>Hey I am Mimic</h1>
         <h2>a web developer</h2>
       </header>
     </section>
- 
     <section class="main-section" id="Work">
       <h2>These are some of my projects</h2>
-      <!-- FIX 2: duplicate id="profile-link" → class="profile-link" -->
       <div class="projects-grid" id="projects">
         <div class="project-tile">
           <img src="tribute.jpg" alt="Tribute Page">
@@ -55,15 +50,11 @@
           <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">Tic Tac Toe Game</a>
         </div>
       </div>
-      <!-- FIX 7: type="Show-more" → type="button" -->
       <button id="Show-more" type="button">Show More ></button>
     </section>
- 
-    <!-- FIX 3: id="Contact " (trailing space) → id="Contact" -->
-    <section class="main-section" id="Contact">
+     <section class="main-section" id="Contact">
       <h1>Let's work together...</h1>
       <h2>How do you take your coffee?</h2>
-      <!-- FIX 4: duplicate opening <div class="social-icons">, now properly single + closed -->
       <div class="social-icons">
         <a href="https://www.facebook.com/freecodecamp/" target="_blank">
           <i class="fab fa-facebook-f"></i>
@@ -82,12 +73,8 @@
         </a>
       </div>
     </section>
- 
-    <!-- FIX 5: </hr> is invalid — replaced with self-closing <hr> -->
     <hr>
- 
-    <ul class="footer-list">
-      <!-- FIX 6: ** markdown ** removed, plain text used instead -->
+     <ul class="footer-list">
       <li><p>This is just a fake portfolio. All the projects and contact details given are not real.</p></li>
       <li>
         <p>© Created for freeCodeCamp
@@ -97,7 +84,6 @@
         </p>
       </li>
     </ul>
- 
   </main>
 </body>
 </html>
