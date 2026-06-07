@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- FIX 1: intial-width=device-width-1.0 → initial-scale=1.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Webpage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a class="nav-link" href="#About">About</a></li>
+      <li><a class="nav-link" href="#Work">Work</a></li>
+      <li><a class="nav-link" href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <main id="main-doc">
+ 
+    <section class="main-section" id="About">
+      <header id="welcome-section">
+        <h1>Hey I am Mimic</h1>
+        <h2>a web developer</h2>
+      </header>
+    </section>
+ 
+    <section class="main-section" id="Work">
+      <h2>These are some of my projects</h2>
+      <!-- FIX 2: duplicate id="profile-link" → class="profile-link" -->
+      <div class="projects-grid" id="projects">
+        <div class="project-tile">
+          <img src="tribute.jpg" alt="Tribute Page">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">Tribute Page</a>
+        </div>
+        <div class="project-tile">
+          <img src="quote.jpg" alt="Random Quote Machine">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">Random Quote Machine</a>
+        </div>
+        <div class="project-tile">
+          <img src="calculator.jpg" alt="Javascript Calculator">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">Javascript Calculator</a>
+        </div>
+        <div class="project-tile">
+          <img src="map.jpg" alt="Map Data Across The World">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">Map Data Across The World</a>
+        </div>
+        <div class="project-tile">
+          <img src="Wikipedia.jpg" alt="Wikipedia Viewer">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">Wikipedia Viewer</a>
+        </div>
+        <div class="project-tile">
+          <img src="game.jpg" alt="Tic Tac Toe Game">
+          <a class="profile-link" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">Tic Tac Toe Game</a>
+        </div>
+      </div>
+      <!-- FIX 7: type="Show-more" → type="button" -->
+      <button id="Show-more" type="button">Show More ></button>
+    </section>
+ 
+    <!-- FIX 3: id="Contact " (trailing space) → id="Contact" -->
+    <section class="main-section" id="Contact">
+      <h1>Let's work together...</h1>
+      <h2>How do you take your coffee?</h2>
+      <!-- FIX 4: duplicate opening <div class="social-icons">, now properly single + closed -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/freecodecamp/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/freecodecamp" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/freecodecamp" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:example@email.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+1234567890">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </section>
+ 
+    <!-- FIX 5: </hr> is invalid — replaced with self-closing <hr> -->
+    <hr>
+ 
+    <ul class="footer-list">
+      <!-- FIX 6: ** markdown ** removed, plain text used instead -->
+      <li><p>This is just a fake portfolio. All the projects and contact details given are not real.</p></li>
+      <li>
+        <p>© Created for freeCodeCamp
+          <a href="https://www.freecodecamp.com/freecodecamp/" target="_blank">
+            <i class="fab fa-free-code-camp"></i>
+          </a>
+        </p>
+      </li>
+    </ul>
+ 
+  </main>
+</body>
+</html>
